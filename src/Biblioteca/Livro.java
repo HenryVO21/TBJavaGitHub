@@ -22,4 +22,8 @@ public class Livro extends Publicacao{
         System.out.println("Livro Disponivel!");
         situacao = true;
     }
+
+    public boolean ViewStatusBook(){
+        return situacao;
+    }
 }
