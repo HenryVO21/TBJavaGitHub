@@ -67,6 +67,7 @@ public class Estudante {
         if(quantidadeAprovados==0){
             return null;
         }
+        int posicao = 0;
         Estudante[] alunosAprovados = new Estudante[quantidadeAprovados];
 
         for (int i = 0 ; i < estudantes.length; i++){
