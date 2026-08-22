@@ -17,13 +17,15 @@ public class Estudante {
         for (int i = 0; i < 5; i ++){
             System.out.println("Digite a "+ (i+1) +"nota do aluno: ");
             notas[i] = teclado.nextDouble();
-            if (notas[i] < 0){
+
+            //queria fazer um validação do valor inserido pelo usuario para nenhum ser negativo
+            /*if (notas[i] < 0){
                 System.out.println("\nValor invalido...");
                 while (notas[i]<0){
                     System.out.println("\nDigite novamente:");
                     notas[i] = teclado.nextDouble();
                 }
-            }
+            }*/
         }
     }
     public double CalculaMedia(){
@@ -54,5 +56,37 @@ public class Estudante {
             }
         }
         return menorNota;
+    }
+
+    public static Estudante[] Aprovados(Estudante[] estudantes){
+        int quantidadeAprovados = 0;
+
+        for(int i = 0 ; i < estudantes.length; i++){
+            if( estudantes[i].CalculaMedia() < 6){
+                quantidadeAprovados++;
+            }
+        }
+        if(quantidadeAprovados==0){
+            return null;
+        }
+        int posicao = 0;
+        Estudante[] alunosAprovados = new Estudante[quantidadeAprovados];
+
+        for (int i = 0 ; i < estudantes.length; i++){
+            if (estudantes[i].CalculaMedia() > 6){
+                alunosAprovados[posicao] = estudantes[i];
+                posicao ++;
+            }
+        }
+        return alunosAprovados;
+    }
+    public double CalculaMedia(int[] peso){
+        double somaNota = 0;
+        int quantidadeProvas = 0;
+        for (int i = 0 ; i < 5 ; i++){
+            somaNota += notas[i] * peso[i];
+            quantidadeProvas += peso[i];
+        }
+        return somaNota/quantidadeProvas;
     }
 }
