@@ -6,12 +6,12 @@ public class Teste {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Digite o nome do livro: ");
+        System.out.println("Digite o nome do livro: ");
         String ttLivro = sc.nextLine();
 
         Livro lv = new Livro(ttLivro, true);
 
-        System.out.print("\nDigite o nome do Periódico: ");
+        System.out.println("\nDigite o nome do Periódico: ");
         String ttPeriodico = sc.nextLine();
 
         System.out.print("Digite o numero do Volume: ");
@@ -27,15 +27,26 @@ public class Teste {
         System.out.println("Título: " + pr.getTitulo());
         System.out.println("Volume: " + pr.getVolume());
 
-        lv.Empretimo();
+        int escolha;
 
-        System.out.println("\nApós empréstimo:");
-        System.out.println("Disponível: " + lv.ViewStatusBook());
+        do {
+            System.out.println("\nO que deseja fazer?");
+            System.out.println("0 - Sair");
+            System.out.println("1 - Emprestar livro");
+            System.out.println("2 - Devolver livro");
+            System.out.println("3 - Status do livro");
+            System.out.print("Escolha: ");
+            escolha = sc.nextInt();
 
-        lv.Devolutiva();
+            switch (escolha){
+                case 0:
+                    System.out.println();
 
-        System.out.println("\nApós devolução:");
-        System.out.println("Disponível: " + lv.ViewStatusBook());
+
+            }
+
+        }
+
 
         sc.close();
 
