@@ -54,7 +54,7 @@ public class Teste {
                     }else {
                         lv.Empretimo();
                     }
-                    break;
+                break;
                 case 2:
                     if (!lv.ViewStatusBook()){
                         lv.Devolutiva();
@@ -62,6 +62,7 @@ public class Teste {
                     }else {
                         lv.Devolutiva();
                     }
+                break;
                 case 3:
                     System.out.println("\nSituação do livro: ");
                     if (lv.ViewStatusBook()){
@@ -69,7 +70,7 @@ public class Teste {
                     } else{
                         System.out.println("Livro Indiponivel");
                     }
-                    break;
+                break;
                 default:
                     System.out.println("\nOpção invalida!");
                 break;
