@@ -58,7 +58,7 @@ public class Estudante {
         return menorNota;
     }
 
-    public static Estudante[] Aprovodos(Estudante[] estudantes){
+    public static Estudante[] Aprovados(Estudante[] estudantes){
         int quantidadeAprovados = 0;
 
         for(int i = 0 ; i < estudantes.length; i++){
