@@ -7,7 +7,7 @@ public class Estudante {
     private String nomeAluno;
     private double[] notas;
 
-    public Estudante(String nomeAluno, double notas){
+    public Estudante(String nomeAluno){
         this.nomeAluno = nomeAluno;
         this.notas = new double[5];
     }
