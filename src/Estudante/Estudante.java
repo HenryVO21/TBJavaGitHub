@@ -27,5 +27,11 @@ public class Estudante {
         return somaNota/5;
     }
 
+    public String getNomeAluno() {
+        return nomeAluno;
+    }
 
+    public double[] getNotas() {
+        return notas;
+    }
 }
