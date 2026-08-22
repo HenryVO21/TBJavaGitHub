@@ -20,10 +20,10 @@ public class Teste {
             System.out.print("Digite o nome do aluno: ");
             String nome = teclado.nextLine();
 
-            estudantes[i].InsereNotas();
 
             estudantes[i] = new Estudante(nome);
 
+            estudantes[i].InsereNotas();
 
             System.out.println("Média: " + estudantes[i].CalculaMedia());
             System.out.println("Menor nota: " + estudantes[i].MenorNota());
