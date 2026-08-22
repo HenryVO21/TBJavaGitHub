@@ -24,6 +24,7 @@ public class Teste {
 
             estudantes[i].InsereNotas();
 
+            System.out.println("\nNome: " + estudantes[i].getNomeAluno());
             System.out.println("Média: " + estudantes[i].CalculaMedia());
             System.out.println("Menor nota: " + estudantes[i].MenorNota());
         }
