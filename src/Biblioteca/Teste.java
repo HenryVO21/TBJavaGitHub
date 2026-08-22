@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Teste {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+
         System.out.print("Digite o nome do livro: ");
         String ttLivro = sc.nextLine();
 
@@ -28,6 +28,16 @@ public class Teste {
         System.out.println("Volume: " + pr.getVolume());
 
         lv.Empretimo();
+
+        System.out.println("\nApós empréstimo:");
+        System.out.println("Disponível: " + lv.ViewStatusBook());
+
+        lv.Devolutiva();
+
+        System.out.println("\nApós devolução:");
+        System.out.println("Disponível: " + lv.ViewStatusBook());
+
+        sc.close();
 
 
     }
