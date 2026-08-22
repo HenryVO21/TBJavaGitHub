@@ -78,15 +78,4 @@ public class Estudante {
         }
         return alunosAprovados;
     }
-
-    public double CalculaMedia(int[] peso){
-        double somaNota = 0;
-        int quantidadeProvas = 0;
-
-        for (int i = 0 ; i < 5 ; i++){
-            somaNota += notas[i] * peso[i];
-            quantidadeProvas += peso[i];
-        }
-        return somaNota/quantidadeProvas;
-    }
 }
