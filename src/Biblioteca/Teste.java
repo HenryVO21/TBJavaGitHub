@@ -40,6 +40,7 @@ public class Teste {
             System.out.println("1 - Emprestar livro");
             System.out.println("2 - Devolver livro");
             System.out.println("3 - Status do livro");
+            System.out.println("4 - Visualizar informações do livro");
             System.out.print("Escolha: ");
             escolha = sc.nextInt();
 
@@ -71,13 +72,23 @@ public class Teste {
                         System.out.println("Livro Indiponivel");
                     }
                 break;
+                case 4:
+                    System.out.println("\n--- LIVRO ---");
+                    System.out.println("Título: " + lv.getTitulo());
+                    System.out.println("Situação: ");
+                    if (lv.ViewStatusBook()){
+                        System.out.println("Livro Diponivel");
+                    } else{
+                        System.out.println("Livro Indiponivel");
+                    }
+                break;
                 default:
                     System.out.println("\nOpção invalida!");
                 break;
             }
         }while (escolha!=0);
 
-        System.out.println("Programa encerrado.");
+        System.out.println("\tPrograma encerrado.");
 
         sc.close();
 
