@@ -24,7 +24,7 @@ public class Teste {
         System.out.println("Disponível: ");
         if (lv.ViewStatusBook()){
             System.out.println("Livro Diponivel");
-        } else if (!lv.ViewStatusBook()) {
+        } else{
             System.out.println("Livro Indiponivel");
         }
 
