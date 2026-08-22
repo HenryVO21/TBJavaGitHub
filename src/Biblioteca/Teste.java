@@ -21,7 +21,12 @@ public class Teste {
 
         System.out.println("\n--- LIVRO ---");
         System.out.println("Título: " + lv.getTitulo());
-        System.out.println("Disponível: " + lv.ViewStatusBook());
+        System.out.println("Disponível: ");
+        if (lv.ViewStatusBook()){
+            System.out.println("Livro Diponivel");
+        } else if (!lv.ViewStatusBook()) {
+            System.out.println("Livro Indiponivel");
+        }
 
         System.out.println("\n--- PERIÓDICO ---");
         System.out.println("Título: " + pr.getTitulo());
