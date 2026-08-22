@@ -11,7 +11,7 @@ public class Livro extends Publicacao {
     public void Empretimo() {
         try {
             if (!situacao) {
-                throw new Exception("Livro Indisponivel!");
+                throw new Exception("Livro Indisponivel!\nAviso: o livro já possui um emprestimo registrado.");
             }
             situacao = false;
         } catch (Exception e) {
@@ -20,7 +20,6 @@ public class Livro extends Publicacao {
     }
 
     public void Devolutiva() {
-        System.out.println("Livro Disponivel!");
         situacao = true;
     }
 
