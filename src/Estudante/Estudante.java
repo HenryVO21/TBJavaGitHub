@@ -34,4 +34,21 @@ public class Estudante {
     public double[] getNotas() {
         return notas;
     }
+
+    public double MenorNota(){
+        double menorNota = 0;
+        for (int i =0; i < 5; i++){
+            switch (i){
+                case 0:
+                    menorNota = notas[i];
+                break;
+                default:
+                    if (menorNota < notas[i]){
+                        menorNota = notas[i];
+                    }
+                break;
+            }
+        }
+        return menorNota;
+    }
 }
