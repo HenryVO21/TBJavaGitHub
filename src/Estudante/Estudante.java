@@ -87,6 +87,6 @@ public class Estudante {
             somaNota += notas[i] * peso[i];
             quantidadeProvas += peso[i];
         }
-        
+        return somaNota/quantidadeProvas;
     }
 }
