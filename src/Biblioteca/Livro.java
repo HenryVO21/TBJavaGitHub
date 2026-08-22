@@ -18,7 +18,7 @@ public class Livro extends Publicacao{
             System.out.println(e.getMessage());
         }
     }
-    public void Delotiva(){
+    public void Devolutiva(){
         System.out.println("Livro Disponivel!");
         situacao = true;
     }
