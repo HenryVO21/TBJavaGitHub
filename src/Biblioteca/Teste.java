@@ -46,12 +46,12 @@ public class Teste {
 
             switch (escolha){
                 case 0:
-                    System.out.println("\n\tEncerrando programa...");
+                    System.out.println("\n\n\n\n\n\tEncerrando programa...");
                 break;
                 case 1:
                     if (lv.ViewStatusBook()){
                         lv.Empretimo();
-                        System.out.println("\nEmprestimo realizado");
+                        System.out.println("\n\n\nEmprestimo realizado");
                     }else {
                         lv.Empretimo();
                     }
@@ -59,7 +59,7 @@ public class Teste {
                 case 2:
                     if (!lv.ViewStatusBook()){
                         lv.Devolutiva();
-                        System.out.println("\nLivro devolvido");
+                        System.out.println("\n\n\nLivro devolvido");
                     }else {
                         lv.Devolutiva();
                     }
@@ -67,13 +67,13 @@ public class Teste {
                 case 3:
                     System.out.println("\nSituação do livro: ");
                     if (lv.ViewStatusBook()){
-                        System.out.println("Livro Diponivel");
+                        System.out.println("\n\n\nLivro Diponivel");
                     } else{
-                        System.out.println("Livro Indiponivel");
+                        System.out.println("\n\n\nLivro Indiponivel");
                     }
                 break;
                 case 4:
-                    System.out.println("\n--- LIVRO ---");
+                    System.out.println("\n\n\n--- LIVRO ---");
                     System.out.println("Título: " + lv.getTitulo());
                     System.out.println("Situação: ");
                     if (lv.ViewStatusBook()){
@@ -83,7 +83,7 @@ public class Teste {
                     }
                 break;
                 default:
-                    System.out.println("\nOpção invalida!");
+                    System.out.println("\n\n\nOpção invalida!");
                 break;
             }
         }while (escolha!=0);
