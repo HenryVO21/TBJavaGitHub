@@ -15,7 +15,7 @@ public class Estudante {
     public void InsereNotas(){
         Scanner teclado = new Scanner(System.in);
         for (int i = 0; i < 5; i ++){
-            System.out.println("Digite a "+ (i+1) +" nota do aluno"+ nomeAluno +" : ");
+            System.out.println("Digite a "+ (i+1) +" nota do aluno "+ nomeAluno +" : ");
             notas[i] = teclado.nextDouble();
             if (notas[i] < 0){
                 System.out.println("\nValor invalido...");
