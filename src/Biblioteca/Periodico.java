@@ -7,6 +7,9 @@ public class Periodico extends Publicacao {
     public Periodico(String titulo, int volume){
         super(titulo);
         this.volume=volume;
+    }
 
+    public int getVolume() {
+        return volume;
     }
 }
