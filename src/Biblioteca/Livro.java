@@ -1,29 +1,29 @@
 package Biblioteca;
 
-public class Livro extends Publicacao{
+public class Livro extends Publicacao {
     private boolean situacao;
 
-    public Livro(String titulo, boolean situacao){
+    public Livro(String titulo, boolean situacao) {
         super(titulo);
     }
 
-    public void Empretimo(){
+    public void Empretimo() {
         try {
-            if(!situacao){
+            if (!situacao) {
                 throw new Exception("Livro Indisponivel!");
             }
             situacao = false;
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
-    public void Devolutiva(){
+
+    public void Devolutiva() {
         System.out.println("Livro Disponivel!");
         situacao = true;
     }
 
-    public boolean ViewStatusBook(){
+    public boolean ViewStatusBook() {
         return situacao;
     }
 }

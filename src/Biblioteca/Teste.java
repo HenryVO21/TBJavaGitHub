@@ -9,9 +9,7 @@ public class Teste {
         System.out.print("Digite o nome do livro: ");
         String ttLivro = teclado.nextLine();
 
-        Livro lv = new Livro(ttLivro,true);
-
-
+        Livro lv = new Livro(ttLivro, true);
 
 
     }
