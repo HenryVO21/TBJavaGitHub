@@ -5,6 +5,7 @@ public class Livro extends Publicacao {
 
     public Livro(String titulo, boolean situacao) {
         super(titulo);
+        this.situacao = situacao;
     }
 
     public void Empretimo() {

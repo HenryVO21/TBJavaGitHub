@@ -57,9 +57,9 @@ public class Teste {
                     System.out.println("\nOpção invalida!");
                 break;
             }
+        }while (escolha!=0);
 
-        }
-
+        System.out.println("Programa encerrado.");
 
         sc.close();
 
