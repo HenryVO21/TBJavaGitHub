@@ -3,7 +3,7 @@ package Biblioteca;
 public class Livro extends Publicacao{
     private boolean situacao;
 
-    public Livro(String titulo){
+    public Livro(String titulo, boolean situacao){
         super(titulo);
     }
 
