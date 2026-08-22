@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Estudante {
 
-    private String nome;
+    private String nomeAluno;
     private double[] notas;
 
-    public Estudante(String nome, double notas){
-        this.nome = nome;
+    public Estudante(String nomeAluno, double notas){
+        this.nomeAluno = nomeAluno;
         this.notas = new double[5];
     }
 
@@ -18,6 +18,13 @@ public class Estudante {
             System.out.println("Digite a "+ (i+1) +"nota do aluno: ");
             notas[i] = teclado.nextDouble();
         }
+    }
+    public double CalculaMedia(){
+        double somaNota = 0;
+        for (int i = 0 ; i < 5 ; i++){
+            somaNota += notas[i];
+        }
+        return somaNota/5;
     }
 
 
