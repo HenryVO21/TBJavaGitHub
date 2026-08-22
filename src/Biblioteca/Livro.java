@@ -20,6 +20,13 @@ public class Livro extends Publicacao {
     }
 
     public void Devolutiva() {
+        try {
+            if (situacao){
+                throw new Exception("Aviso: O respectivo livro consta como devolvido.")
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         situacao = true;
     }
 
