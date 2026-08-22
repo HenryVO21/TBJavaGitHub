@@ -17,6 +17,13 @@ public class Estudante {
         for (int i = 0; i < 5; i ++){
             System.out.println("Digite a "+ (i+1) +"nota do aluno: ");
             notas[i] = teclado.nextDouble();
+            if (notas[i] < 0){
+                System.out.println("\nValor invalido...");
+                while (notas[i]<0){
+                    System.out.println("\nDigite novamente:");
+                    notas[i] = teclado.nextDouble();
+                }
+            }
         }
     }
     public double CalculaMedia(){
