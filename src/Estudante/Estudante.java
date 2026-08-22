@@ -78,4 +78,10 @@ public class Estudante {
         }
         return alunosAprovados;
     }
+
+    public double CalculaMedia(int[] peso){
+        double somaNota = 0;
+        int quantidadeProvas = 0;
+
+
 }
