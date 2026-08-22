@@ -55,4 +55,7 @@ public class Estudante {
         }
         return menorNota;
     }
-}
+
+    public static Estudante[] Aprovodos(Estudante[] estudantes) {
+
+    }
