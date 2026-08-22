@@ -50,7 +50,7 @@ public class Teste {
                 case 1:
                     if (lv.ViewStatusBook()){
                         lv.Empretimo();
-                        System.out.println("\nEmpretimo realizado");
+                        System.out.println("\nEmprestimo realizado");
                     }else {
                         lv.Empretimo();
                     }
