@@ -43,16 +43,28 @@ public class Teste {
                     System.out.println("\n\tEncerrando programa...");
                 break;
                 case 1:
-                    lv.Empretimo();
-                    System.out.println("\nLivro empretado");
-                break;
+                    if (lv.ViewStatusBook()){
+                        lv.Empretimo();
+                        System.out.println("\nEmpretimo realizado");
+                    }else {
+                        lv.Empretimo();
+                    }
+                    break;
                 case 2:
-                    lv.Devolutiva();
-                    System.out.println("\nLivro devolvido");
+                    if (!lv.ViewStatusBook()){
+                        lv.Devolutiva();
+                        System.out.println("\nLivro devolvido");
+                    }else {
+                        lv.Devolutiva();
+                    }
                 case 3:
-                    System.out.println("Situação do livro: ");
-                    lv.ViewStatusBook();
-                break;
+                    System.out.println("\nSituação do livro: ");
+                    if (lv.ViewStatusBook()){
+                        System.out.println("Livro Diponivel");
+                    } else if (!lv.ViewStatusBook()) {
+                        System.out.println("Livro Indiponivel");
+                    }
+                    break;
                 default:
                     System.out.println("\nOpção invalida!");
                 break;
