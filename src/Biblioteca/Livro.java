@@ -3,12 +3,23 @@ package Biblioteca;
 public class Livro extends Publicacao{
     private boolean situacao;
 
-    public Livro( boolean situacao, String titulo){
+    public Livro(String titulo){
         super(titulo);
-        this.situacao = false;
     }
 
-    public boolean Empretimo(){
-
+    public void Empretimo(){
+        try {
+            if(!situacao){
+                throw new Exception("Livro Indisponivel!");
+            }
+            situacao = false;
+        }
+        catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
+    public void Delotiva(){
+        System.out.println("Livro Disponivel!");
+        situacao = true;
     }
 }
