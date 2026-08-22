@@ -1,7 +1,7 @@
 package Biblioteca;
 
 public class Publicacao {
-    private String titulo;
+    public String titulo;
 
     public Publicacao(String titulo){
         this.titulo = titulo;
