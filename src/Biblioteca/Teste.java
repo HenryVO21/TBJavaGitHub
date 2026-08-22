@@ -21,7 +21,7 @@ public class Teste {
 
         System.out.println("\n--- LIVRO ---");
         System.out.println("Título: " + lv.getTitulo());
-        System.out.println("Disponível: ");
+        System.out.println("Situação: ");
         if (lv.ViewStatusBook()){
             System.out.println("Livro Diponivel");
         } else{
