@@ -52,7 +52,7 @@ public class Estudante {
                     menorNota = notas[i];
                 break;
                 default:
-                    if (menorNota < notas[i]) {
+                    if (menorNota > notas[i]) {
                         menorNota = notas[i];
                     }
                 break;
