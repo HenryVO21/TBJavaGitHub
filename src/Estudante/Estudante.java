@@ -59,5 +59,10 @@ public class Estudante {
     public static Estudante[] Aprovodos(Estudante[] estudantes){
         int quantidadeAprovados = 0;
 
-        
+        for(int i = 0 ; i < estudantes.length; i++){
+            if( estudantes[i].CalculaMedia() < 6){
+                quantidadeAprovados++;
+            }
+        }
+    }
 }
