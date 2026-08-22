@@ -11,6 +11,13 @@ public class Teste {
 
         Livro lv = new Livro(ttLivro, true);
 
+        System.out.print("Digite o nome do Periódico");
+        String ttPeriodico = teclado.nextLine();
+
+        System.out.print("Digite o nome do Periódico");
+        int volume = teclado.nextInt();
+
+        Periodico pr = new Periodico(ttPeriodico,volume);
 
     }
 }
