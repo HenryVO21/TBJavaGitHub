@@ -64,5 +64,15 @@ public class Estudante {
                 quantidadeAprovados++;
             }
         }
+        if(quantidadeAprovados==0){
+            return null;
+        }
+        Estudante[] alunosAprovados = new Estudante[quantidadeAprovados];
+
+        for (int i = 0 ; i < estudantes.length; i++){
+            if (estudantes[i].CalculaMedia() < 6){
+                alunosAprovados[posicao] = estudantes[i];
+            }
+        }
     }
 }
