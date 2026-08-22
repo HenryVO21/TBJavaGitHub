@@ -40,9 +40,22 @@ public class Teste {
 
             switch (escolha){
                 case 0:
-                    System.out.println();
-
-
+                    System.out.println("\n\tEncerrando programa...");
+                break;
+                case 1:
+                    lv.Empretimo();
+                    System.out.println("\nLivro empretado");
+                break;
+                case 2:
+                    lv.Devolutiva();
+                    System.out.println("\nLivro devolvido");
+                case 3:
+                    System.out.println("Situação do livro: ");
+                    lv.ViewStatusBook();
+                break;
+                default:
+                    System.out.println("\nOpção invalida!");
+                break;
             }
 
         }
