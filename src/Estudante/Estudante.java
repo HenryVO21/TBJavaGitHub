@@ -76,5 +76,6 @@ public class Estudante {
                 posicao ++;
             }
         }
+        return alunosAprovados;
     }
 }
