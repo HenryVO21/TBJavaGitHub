@@ -65,7 +65,7 @@ public class Estudante {
         int quantidadeAprovados = 0;
 
         for(int i = 0 ; i < estudantes.length; i++){
-            if( estudantes[i].CalculaMedia() < 6){
+            if( estudantes[i].CalculaMedia() > 6){
                 quantidadeAprovados++;
             }
         }
