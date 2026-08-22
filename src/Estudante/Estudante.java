@@ -47,12 +47,15 @@ public class Estudante {
     public double MenorNota(){
         double menorNota = 0;
         for (int i =0; i < 5; i++){
-            if (i == 0) {
-                menorNota = notas[i];
-            } else {
-                if (menorNota < notas[i]) {
+            switch (i){
+                case 0:
                     menorNota = notas[i];
-                }
+                break;
+                default:
+                    if (menorNota < notas[i]) {
+                        menorNota = notas[i];
+                    }
+                break;
             }
         }
         return menorNota;
