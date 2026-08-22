@@ -84,8 +84,7 @@ public class Estudante {
         for (int i = 0 ; i < 5 ; i++){
             somaNota += notas[i] * peso[i];
             quantidadeProvas += peso[i];
-
         }
-        return somaNota/5;
+        return somaNota/quantidadeProvas;
     }
 }
